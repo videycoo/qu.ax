@@ -3,7 +3,16 @@
 <head>
     <meta charset="utf-8">
     <title>Updated Image Page</title>
-    <link rel="canonical" href="https://example.com/your-page">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://qu-ax-tawny.vercel.app/">
+    <meta property="og:title" content="Updated Image Page">
+    <meta property="og:description" content="Check out this content!">
+    <meta property="og:image" content="https://scontent-lax.cdninstagram.com/v/t64.5771-25/491818885_985317434658608_5584724709614371596_n.png?stp=c154.0.411.411a_dst-png_s288x288&_nc_cat=100&ccb=1-7&_nc_sid=6e7a0a&_nc_ohc=TRkqMgeeHOIQ7kNvwG-7VXD&_nc_oc=Adkhx7-aida-pTZRDJnW_YF2wW4nRgG34MG8YhtlfAEVgcbXl50stoEY0u9vJovqiq8&_nc_zt=3&_nc_ht=scontent-sjc3-1.oculuscdn.com&oh=00_Aforw_PU4-b1y0OpGN-oPLlhCPYaeT8MJXCaZAqTlY-QMg&oe=6972ED96">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <link rel="canonical" href="https://qu-ax-tawny.vercel.app/">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -11,102 +20,29 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
     <style amp-custom>
-       body {
-         margin: 0;
-         word-wrap: break-word;
-         font-family: "Open Sans", Helvetica, sans-serif;
-         background-color: #ffffff;
-       }
-
-       /* Background Banner Section */
+       body { margin: 0; font-family: sans-serif; background-color: #fff; }
        .main-image {
-         width: 100%;
-         height: 300px;
+         width: 100%; height: 300px;
          background-image: url("https://scontent-lax.cdninstagram.com/v/t64.5771-25/491818885_985317434658608_5584724709614371596_n.png?stp=c154.0.411.411a_dst-png_s288x288&_nc_cat=100&ccb=1-7&_nc_sid=6e7a0a&_nc_ohc=TRkqMgeeHOIQ7kNvwG-7VXD&_nc_oc=Adkhx7-aida-pTZRDJnW_YF2wW4nRgG34MG8YhtlfAEVgcbXl50stoEY0u9vJovqiq8&_nc_zt=3&_nc_ht=scontent-sjc3-1.oculuscdn.com&oh=00_Aforw_PU4-b1y0OpGN-oPLlhCPYaeT8MJXCaZAqTlY-QMg&oe=6972ED96");
-         background-size: cover;
-         background-position: center;
+         background-size: cover; background-position: center;
        }
-
-       #content-container {
-         padding: 24px;
-         background-color: #fff;
+       .content { padding: 20px; text-align: center; }
+       .footer-bar {
+         position: fixed; bottom: 0; width: 100%;
+         background: #fff; padding: 10px; border-top: 1px solid #ddd;
+         display: flex; align-items: center; justify-content: space-around;
        }
-
-       .app-title {
-         font-size: 14px;
-         color: #888;
-         text-transform: uppercase;
-         letter-spacing: 1px;
-       }
-
-       .card-title {
-         font-size: 28px;
-         line-height: 32px;
-         font-weight: bold;
-         margin-top: 10px;
-       }
-
-       /* Floating Bottom Bar */
-       .input-wrapper {
-         position: fixed;
-         bottom: 0;
-         left: 0;
-         width: 100%;
-         padding: 15px 24px;
-         background-color: #fff;
-         box-shadow: 0px -5px 15px rgba(0,0,0,0.08);
-         box-sizing: border-box;
-         display: flex;
-         align-items: center;
-         z-index: 999;
-       }
-
-       .app-icon {
-         width: 60px;
-         height: 60px;
-         background-image: url("https://scontent-lax.cdninstagram.com/v/t64.5771-25/491818885_985317434658608_5584724709614371596_n.png?stp=c154.0.411.411a_dst-png_s288x288&_nc_cat=100&ccb=1-7&_nc_sid=6e7a0a&_nc_ohc=TRkqMgeeHOIQ7kNvwG-7VXD&_nc_oc=Adkhx7-aida-pTZRDJnW_YF2wW4nRgG34MG8YhtlfAEVgcbXl50stoEY0u9vJovqiq8&_nc_zt=3&_nc_ht=scontent-sjc3-1.oculuscdn.com&oh=00_Aforw_PU4-b1y0OpGN-oPLlhCPYaeT8MJXCaZAqTlY-QMg&oe=6972ED96");
-         background-size: 100% 100%;
-         border-radius: 12px;
-         flex-shrink: 0;
-       }
-
-       .cta-button {
-         flex-grow: 1;
-         height: 55px;
-         line-height: 55px;
-         background-color: #1a1a1a;
-         color: #fff;
-         text-align: center;
-         text-decoration: none;
-         font-size: 18px;
-         font-weight: bold;
-         border-radius: 6px;
-         margin-left: 15px;
-       }
-
-       @media only screen and (orientation: landscape) {
-         .main-image { position: fixed; width: 50%; height: 100%; }
-         #content-container { margin-left: 50%; width: 50%; }
-         .input-wrapper { left: 50%; width: 50%; }
-       }
+       .cta-btn { background: #000; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
     </style>
 </head>
 <body>
-
     <div class="main-image"></div>
-
-    <div id="content-container">
-        <div class="app-title">Instagram Content</div>
-        <div class="card-title">Aapki Image Add Ho Gayi Hai</div>
-        <div class="app-content">
-            <p>Ye page ab modern layout aur aapki provide ki gayi image ke saath ready hai.</p>
-        </div>
+    <div class="content">
+        <h1>Page Live Hai!</h1>
+        <p>Facebook ab image fetch karega.</p>
     </div>
-
-    <div class="input-wrapper">
-        <div class="app-icon"></div>
-        <a href="https://your-link-here.com" class="cta-button">GET THE APP</a>
+    <div class="footer-bar">
+        <a href="#" class="cta-btn">DOWNLOAD APP</a>
     </div>
-
 </body>
 </html>
