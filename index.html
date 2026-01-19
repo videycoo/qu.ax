@@ -1,78 +1,94 @@
 <!DOCTYPE html>
-<html amp lang="en">
+<html ⚡ lang="ur">
 <head>
     <meta charset="utf-8">
-    <title>14:00 ⇆ㅤ❚❚ ───●──↻ 26:00
-VID</title>
+    <title>AMP Page</title>
+    <link rel="canonical" href="https://example.com/your-page">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
-    <meta property="og:title" content="14:00 ⇆ㅤ❚❚ ───●──↻ 26:00
-VID">
-    <meta property="og:description" content="Click to get the app and join video!">
-    <meta property="og:image" content="https://cdn.uploaded.photo/2026/01/19/1000268215.jpeg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gcore-vid.xvideos-cdn.com/iguG6MPksl4gxE-Ke5bt0A==,1768782085/videos/3gp/f/5/1/xvideos.com_f5190900044089e6d00cbffd90a27f95.mp4">
-
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <link rel="canonical" href="https://gcore-vid.xvideos-cdn.com/iguG6MPksl4gxE-Ke5bt0A==,1768782085/videos/3gp/f/5/1/xvideos.com_f5190900044089e6d00cbffd90a27f95.mp4">
-
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
     <style amp-custom>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: #ffffff;
-            margin: 0;
-            text-align: center;
+        #branch-sdk { position:fixed; bottom:0; left:0; right:0; }
+        body { margin: 0; word-wrap: break-word; font-family: "Open Sans", Helvetica, serif; background-color: #f4f4f4; }
+        
+        /* Landscape/Portrait Images */
+        .main-image {
+            width: 100%;
+            height: 75vw;
+            background-image: url("https://video.xx.fbcdn.net/v/t45.5328-9/615365875_1367327088028006_2300986262585424538_n.jpg?stp=c0.120.1080.564a_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=b8e0be&oh=00_AfoPMfxPX4eLzkVg7oN7mnK_MzUgJh1w9C96J_Qdvkl_NQ&oe=6970353B");
+            background-size: cover;
+            background-position: center;
         }
-        .header-image {
-            margin-top: 50px;
+
+        #content-container { box-sizing: border-box; padding: 24px; background-color: #fff; }
+        .app-title { font-size: 14px; padding-bottom: 11px; text-transform: uppercase; color: #666; }
+        .card-title { font-size: 33px; line-height: 36px; font-weight: bold; }
+        .app-content { padding-top: 10px; padding-bottom: 120px; font-size: 20px; }
+
+        /* Bottom CTA Section */
+        .input-wrapper {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 110px;
+            background-color: #fff;
+            box-shadow: 0px -10px 20px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
         }
-        #content-container {
-            padding: 30px;
-        }
-        .card-title {
-            font-size: 28px;
-            color: #333;
-        }
-        .app-content {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 30px;
+        .input-container { width: 100%; padding: 0 24px; display: flex; align-items: center; }
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            background-image: url("https://video.xx.fbcdn.net/v/t45.5328-9/615365875_1367327088028006_2300986262585424538_n.jpg?stp=c0.120.1080.564a_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=b8e0be&oh=00_AfoPMfxPX4eLzkVg7oN7mnK_MzUgJh1w9C96J_Qdvkl_NQ&oe=6970353B");
+            background-size: cover;
+            border-radius: 12px;
         }
         .cta-button {
-            display: inline-block;
-            background-color: #444;
+            flex-grow: 1;
+            height: 55px;
+            line-height: 55px;
+            background-color: #007bff;
+            border-radius: 8px;
+            font-size: 18px;
+            margin-left: 15px;
             color: #fff;
-            padding: 15px 40px;
+            text-align: center;
             text-decoration: none;
-            border-radius: 5px;
             font-weight: bold;
-            font-size: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media (orientation: landscape) {
+            .main-image { width: 50%; height: 100vh; position: fixed; left: 0; }
+            #content-container { margin-left: 50%; width: 50%; }
+            .input-wrapper { width: 50%; left: 50%; }
         }
     </style>
 </head>
 <body>
 
-    <div class="header-image">
-        <amp-img src="https://cdn.uploaded.photo/2026/01/19/1000268215.jpeg" 
-                 width="150" 
-                 height="150" 
-                 layout="intrinsic" 
-                 alt="https://cdn.uploaded.photo/2026/01/19/1000268215.jpeg">
-        </amp-img>
-    </div>
+    <div class="main-image"></div>
 
     <div id="content-container">
-        <h1 class="card-title">HD VIDEO</h1>
-        <p class="app-content">WATCH MORE.</p>
-        
-        <a href="https://gcore-vid.xvideos-cdn.com/iguG6MPksl4gxE-Ke5bt0A==,1768782085/videos/3gp/f/5/1/xvideos.com_f5190900044089e6d00cbffd90a27f95.mp4" class="cta-button">14:00 ⇆ㅤ❚❚ ───●──↻ 26:00
-VID</a>
+        <div class="app-title">Featured Content</div>
+        <div class="card-title">Aapka Heading Yahan Ayega</div>
+        <div class="app-content">
+            Yahan aap apna main content likh sakte hain jo user ko dikhana hai.
+        </div>
+    </div>
+
+    <div class="input-wrapper">
+        <div class="input-container">
+            <div class="app-icon"></div>
+            <a href="#" class="cta-button">GET THE APP</a>
+        </div>
     </div>
 
 </body>
